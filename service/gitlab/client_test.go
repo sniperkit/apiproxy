@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/sniperkit/apiproxy/pkg"
 	"github.com/sniperkit/httpcache/pkg"
+	"github.com/sniperkit/xapi/pkg"
 	"github.com/xanzy/go-gitlab"
 	// "github.com/sourcegraph/httpcache"
 )

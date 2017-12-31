@@ -1,10 +1,13 @@
-package: github.com/sniperkit/apiproxy
+package: github.com/sniperkit/xapi
 import:
 - package: github.com/gfleury/go-bitbucket-v1
 - package: github.com/google/go-github
   subpackages:
   - github
 - package: github.com/gorilla/handlers
+- package: github.com/hackebrot/go-librariesio
+  subpackages:
+  - librariesio
 - package: github.com/sniperkit/httpcache
   subpackages:
   - pkg

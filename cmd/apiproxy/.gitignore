@@ -1,1 +1,4 @@
-apiproxy
+*
+!main.go
+!main_test.go
+!.gitignore

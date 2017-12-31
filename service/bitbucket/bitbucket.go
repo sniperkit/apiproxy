@@ -5,7 +5,8 @@ import (
 	"time"
 
 	_ "github.com/gfleury/go-bitbucket-v1"
-	"github.com/sniperkit/apiproxy/pkg"
+
+	"github.com/sniperkit/xapi/pkg"
 )
 
 // MaxAge represents custom cache max-ages for GitHub API resources. It

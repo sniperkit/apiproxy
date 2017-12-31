@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/gorilla/handlers"
-	"github.com/sniperkit/apiproxy/pkg"
 	"github.com/sniperkit/httpcache/pkg"
+	"github.com/sniperkit/xapi/pkg"
 	// "github.com/sourcegraph/httpcache"
 )
 

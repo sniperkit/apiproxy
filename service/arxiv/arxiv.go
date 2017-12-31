@@ -1,10 +1,10 @@
-package githubproxy
+package arxivproxy
 
 import (
 	"regexp"
 	"time"
 
-	_ "github.com/google/go-github/github"
+	_ "github.com/orijtech/arxiv/v1"
 
 	"github.com/sniperkit/xapi/pkg"
 )

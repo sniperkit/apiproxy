@@ -1,11 +1,12 @@
-package githubproxy
+package librariesioproxy
 
 import (
 	"fmt"
 	"net/http"
 	"regexp"
 
-	"github.com/google/go-github/github"
+	"github.com/hackebrot/go-librariesio/librariesio"
+
 	"github.com/sniperkit/httpcache/pkg"
 	"github.com/sniperkit/xapi/pkg"
 	// "github.com/sourcegraph/httpcache"

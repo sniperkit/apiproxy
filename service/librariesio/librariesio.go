@@ -1,10 +1,10 @@
-package githubproxy
+package librariesioproxy
 
 import (
 	"regexp"
 	"time"
 
-	_ "github.com/google/go-github/github"
+	_ "github.com/hackebrot/go-librariesio/librariesio"
 
 	"github.com/sniperkit/xapi/pkg"
 )

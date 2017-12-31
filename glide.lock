@@ -1,5 +1,5 @@
-hash: 07e1c6ca7498991a8423b0209494e37b3b46f44d9f5efa18da40532e2b8b6e2e
-updated: 2017-12-31T15:56:17.843638935+01:00
+hash: 3fa0d922340d2db8bf100aaca4ee0c85c41b62bd7177b1f693c9832eb14863fd
+updated: 2017-12-31T19:36:05.370476481+01:00
 imports:
 - name: github.com/gfleury/go-bitbucket-v1
   version: fa8ce9c2a0e746540475f78710635a0d474c7581
@@ -17,8 +17,12 @@ imports:
   - query
 - name: github.com/gorilla/handlers
   version: 90663712d74cb411cbef281bc1e08c19d1a76145
+- name: github.com/hackebrot/go-librariesio
+  version: 20a272f9cba629293b02fa41705ab740cba2411a
+  subpackages:
+  - librariesio
 - name: github.com/sniperkit/httpcache
-  version: 59c2b44b74bfcedfcf27ad0cb7ae571486e3ddcb
+  version: 2f1e84dc232f96bf26d6759fc26e32a272e01031
   subpackages:
   - pkg
 - name: github.com/xanzy/go-gitlab

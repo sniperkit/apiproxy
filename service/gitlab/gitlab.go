@@ -4,8 +4,9 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/sniperkit/apiproxy/pkg"
 	_ "github.com/xanzy/go-gitlab"
+
+	"github.com/sniperkit/xapi/pkg"
 )
 
 // MaxAge represents custom cache max-ages for GitHub API resources. It
