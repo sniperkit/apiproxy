@@ -1,6 +1,12 @@
-hash: de4132ecf401f7688e8c469f5f7586621b6f2f56a8523c27d1b10840b6ad27a4
-updated: 2017-12-31T15:25:09.002030215+01:00
+hash: d6ca8ba390152f0a60070238e6e8c08d1b68c07ad32fbd637ad7507350b1918a
+updated: 2017-12-31T15:30:43.460243877+01:00
 imports:
+- name: github.com/gfleury/go-bitbucket-v1
+  version: fa8ce9c2a0e746540475f78710635a0d474c7581
+- name: github.com/golang/protobuf
+  version: 655cdfa588ea190e901bc5590e65d5621688847c
+  subpackages:
+  - proto
 - name: github.com/google/go-github
   version: fc3c57184028a80ff3979d912cdaf5f08887f98a
   subpackages:
@@ -13,4 +19,25 @@ imports:
   version: 90663712d74cb411cbef281bc1e08c19d1a76145
 - name: github.com/sourcegraph/httpcache
   version: 16db777d8ebea60a3e746a7e0703eaaa53f85f7f
+- name: github.com/xanzy/go-gitlab
+  version: ec65bc7934094df33cb05d541a4ffadcd1f64861
+- name: golang.org/x/net
+  version: d866cfc389cec985d6fda2859936a575a55a3ab6
+  subpackages:
+  - context
+  - context/ctxhttp
+- name: golang.org/x/oauth2
+  version: 197281d4e0ecd78c33865daf9c6e51626feefcb2
+  subpackages:
+  - internal
+- name: google.golang.org/appengine
+  version: 5bee14b453b4c71be47ec1781b0fa61c2ea182db
+  subpackages:
+  - internal
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/remote_api
+  - internal/urlfetch
+  - urlfetch
 testImports: []
