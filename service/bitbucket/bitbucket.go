@@ -1,10 +1,10 @@
-package githubproxy
+package bitbucketproxy
 
 import (
 	"regexp"
 	"time"
 
-	_ "github.com/google/go-github/github"
+	_ "github.com/gfleury/go-bitbucket-v1"
 	"github.com/sniperkit/apiproxy"
 )
 

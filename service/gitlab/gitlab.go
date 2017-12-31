@@ -1,11 +1,11 @@
-package githubproxy
+package gitlabproxy
 
 import (
 	"regexp"
 	"time"
 
-	_ "github.com/google/go-github/github"
 	"github.com/sniperkit/apiproxy"
+	_ "github.com/xanzy/go-gitlab"
 )
 
 // MaxAge represents custom cache max-ages for GitHub API resources. It
