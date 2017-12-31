@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/sniperkit/httpcache"
+	"github.com/sniperkit/httpcache/pkg"
 	// "github.com/sourcegraph/httpcache"
 )
 

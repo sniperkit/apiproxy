@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/go-github/github"
 	"github.com/sniperkit/apiproxy/pkg"
-	"github.com/sniperkit/httpcache"
+	"github.com/sniperkit/httpcache/pkg"
 	// "github.com/sourcegraph/httpcache"
 )
 

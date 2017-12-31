@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/sniperkit/httpcache"
+	"github.com/sniperkit/httpcache/pkg"
 	// "github.com/sourcegraph/httpcache"
 )
 
