@@ -3,14 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/gorilla/handlers"
-	"github.com/sniperkit/apiproxy"
-	"github.com/sourcegraph/httpcache"
 	"log"
 	"net/http"
 	"net/url"
 	"os"
 	"time"
+
+	"github.com/gorilla/handlers"
+	"github.com/sniperkit/apiproxy/pkg"
+	"github.com/sniperkit/httpcache"
+	// "github.com/sourcegraph/httpcache"
 )
 
 var bindAddr = flag.String("http", ":8080", "HTTP bind address for proxy")

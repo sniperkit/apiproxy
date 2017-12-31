@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/sniperkit/apiproxy"
+	"github.com/sniperkit/apiproxy/pkg"
 	_ "github.com/xanzy/go-gitlab"
 )
 

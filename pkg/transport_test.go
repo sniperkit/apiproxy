@@ -2,9 +2,11 @@ package apiproxy
 
 import (
 	"errors"
-	"github.com/sourcegraph/httpcache"
 	"net/http"
 	"testing"
+
+	"github.com/sniperkit/httpcache"
+	// "github.com/sourcegraph/httpcache"
 )
 
 func TestRevalidationTransport_NoValidator(t *testing.T) {

@@ -5,5 +5,5 @@ import:
   subpackages:
   - github
 - package: github.com/gorilla/handlers
-- package: github.com/sourcegraph/httpcache
+- package: github.com/sniperkit/httpcache
 - package: github.com/xanzy/go-gitlab

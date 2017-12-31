@@ -1,5 +1,5 @@
-hash: d6ca8ba390152f0a60070238e6e8c08d1b68c07ad32fbd637ad7507350b1918a
-updated: 2017-12-31T15:30:43.460243877+01:00
+hash: 5a10b401f6829eefa3983caebe111f8c9e1fce3292cff849e0375bf46ef624d3
+updated: 2017-12-31T15:38:46.220711445+01:00
 imports:
 - name: github.com/gfleury/go-bitbucket-v1
   version: fa8ce9c2a0e746540475f78710635a0d474c7581
@@ -17,12 +17,12 @@ imports:
   - query
 - name: github.com/gorilla/handlers
   version: 90663712d74cb411cbef281bc1e08c19d1a76145
-- name: github.com/sourcegraph/httpcache
-  version: 16db777d8ebea60a3e746a7e0703eaaa53f85f7f
+- name: github.com/sniperkit/httpcache
+  version: f42fbff83a257fa4d963b9d88577fade797cb4f2
 - name: github.com/xanzy/go-gitlab
   version: ec65bc7934094df33cb05d541a4ffadcd1f64861
 - name: golang.org/x/net
-  version: d866cfc389cec985d6fda2859936a575a55a3ab6
+  version: e45385e9b226f570b1f086bf287b25d3d4117776
   subpackages:
   - context
   - context/ctxhttp

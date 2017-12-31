@@ -2,10 +2,12 @@ package apiproxy
 
 import (
 	"bytes"
-	"github.com/sourcegraph/httpcache"
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/sniperkit/httpcache"
+	// "github.com/sourcegraph/httpcache"
 )
 
 // RevalidationTransport is an implementation of net/http.RoundTripper that

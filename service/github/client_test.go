@@ -2,11 +2,13 @@ package githubproxy
 
 import (
 	"fmt"
-	"github.com/google/go-github/github"
-	"github.com/sniperkit/apiproxy"
-	"github.com/sourcegraph/httpcache"
 	"net/http"
 	"regexp"
+
+	"github.com/google/go-github/github"
+	"github.com/sniperkit/apiproxy/pkg"
+	"github.com/sniperkit/httpcache"
+	// "github.com/sourcegraph/httpcache"
 )
 
 func ExampleGitHubClient_repositories() {

@@ -1,10 +1,12 @@
 package apiproxy
 
 import (
-	"github.com/sourcegraph/httpcache"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
+
+	"github.com/sniperkit/httpcache"
+	// "github.com/sourcegraph/httpcache"
 )
 
 // NewCachingSingleHostReverseProxy constructs a caching reverse proxy handler for
