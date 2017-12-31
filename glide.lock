@@ -1,0 +1,16 @@
+hash: de4132ecf401f7688e8c469f5f7586621b6f2f56a8523c27d1b10840b6ad27a4
+updated: 2017-12-31T15:25:09.002030215+01:00
+imports:
+- name: github.com/google/go-github
+  version: fc3c57184028a80ff3979d912cdaf5f08887f98a
+  subpackages:
+  - github
+- name: github.com/google/go-querystring
+  version: 53e6ce116135b80d037921a7fdd5138cf32d7a8a
+  subpackages:
+  - query
+- name: github.com/gorilla/handlers
+  version: 90663712d74cb411cbef281bc1e08c19d1a76145
+- name: github.com/sourcegraph/httpcache
+  version: 16db777d8ebea60a3e746a7e0703eaaa53f85f7f
+testImports: []

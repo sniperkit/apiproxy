@@ -3,8 +3,8 @@ package githubproxy
 import (
 	"fmt"
 	"github.com/google/go-github/github"
+	"github.com/sniperkit/apiproxy"
 	"github.com/sourcegraph/httpcache"
-	"github.com/sourcegraph/apiproxy"
 	"net/http"
 	"regexp"
 )

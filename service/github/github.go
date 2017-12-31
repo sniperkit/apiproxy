@@ -2,7 +2,7 @@ package githubproxy
 
 import (
 	_ "github.com/google/go-github/github"
-	"github.com/sourcegraph/apiproxy"
+	"github.com/sniperkit/apiproxy"
 	"regexp"
 	"time"
 )

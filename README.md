@@ -3,20 +3,20 @@ apiproxy
 
 apiproxy is a proxy for HTTP/REST APIs with configurable cache timeouts, etc.
 
-**Documentation:** <https://sourcegraph.com/github.com/sourcegraph/apiproxy/tree>
+**Documentation:** <https://sourcegraph.com/github.com/sniperkit/apiproxy/tree>
 
 [![Build Status](https://travis-ci.org/sourcegraph/apiproxy.png?branch=master)](https://travis-ci.org/sourcegraph/apiproxy)
-[![status](https://sourcegraph.com/api/repos/github.com/sourcegraph/apiproxy/badges/status.png)](https://sourcegraph.com/github.com/sourcegraph/apiproxy)
-[![xrefs](https://sourcegraph.com/api/repos/github.com/sourcegraph/apiproxy/badges/xrefs.png)](https://sourcegraph.com/github.com/sourcegraph/apiproxy)
-[![funcs](https://sourcegraph.com/api/repos/github.com/sourcegraph/apiproxy/badges/funcs.png)](https://sourcegraph.com/github.com/sourcegraph/apiproxy)
-[![top func](https://sourcegraph.com/api/repos/github.com/sourcegraph/apiproxy/badges/top-func.png)](https://sourcegraph.com/github.com/sourcegraph/apiproxy)
-[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/sourcegraph/apiproxy/counters/views-24h.png)](https://sourcegraph.com/github.com/sourcegraph/apiproxy)
+[![status](https://sourcegraph.com/api/repos/github.com/sniperkit/apiproxy/badges/status.png)](https://sourcegraph.com/github.com/sniperkit/apiproxy)
+[![xrefs](https://sourcegraph.com/api/repos/github.com/sniperkit/apiproxy/badges/xrefs.png)](https://sourcegraph.com/github.com/sniperkit/apiproxy)
+[![funcs](https://sourcegraph.com/api/repos/github.com/sniperkit/apiproxy/badges/funcs.png)](https://sourcegraph.com/github.com/sniperkit/apiproxy)
+[![top func](https://sourcegraph.com/api/repos/github.com/sniperkit/apiproxy/badges/top-func.png)](https://sourcegraph.com/github.com/sniperkit/apiproxy)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/sniperkit/apiproxy/counters/views-24h.png)](https://sourcegraph.com/github.com/sniperkit/apiproxy)
 
 Installation
 ------------
 
 ```bash
-go get github.com/sourcegraph/apiproxy
+go get github.com/sniperkit/apiproxy
 ```
 
 
@@ -35,7 +35,7 @@ HTTP client on any host.
 The included `apiproxy` program runs a proxy server with a specified target URL:
 
 ```bash
-$ go install github.com/sourcegraph/apiproxy/cmd/apiproxy
+$ go install github.com/sniperkit/apiproxy/cmd/apiproxy
 $ apiproxy http://api.example.com
 2013/09/13 21:19:57 Starting proxy on :8080 with target http://api.example.com
 ```
@@ -48,14 +48,14 @@ See `apiproxy -h` for more information.
 
 ### As a Go client [`http.RoundTripper`](https://sourcegraph.com/code.google.com/p/go/symbols/go/code.google.com/p/go/src/pkg/net/http/RoundTripper:type)
 
-Clients can use [`apiproxy.RevalidationTransport`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/RevalidationTransport:type) to modify the caching behavior of HTTP requests by setting a custom [`apiproxy.Validator`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/Validator:type) on the transport. The [`Validator`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/Validator:type) is used to determine whether a cache entry for a URL is still valid at a certain age.
+Clients can use [`apiproxy.RevalidationTransport`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/RevalidationTransport:type) to modify the caching behavior of HTTP requests by setting a custom [`apiproxy.Validator`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/Validator:type) on the transport. The [`Validator`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/Validator:type) is used to determine whether a cache entry for a URL is still valid at a certain age.
 
-A [`Validator`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/Validator:type) can be created by wrapping a `func(url *url.URL, age time.Duration) bool`
-function with [`apiproxy.ValidatorFunc(...)`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/ValidatorFunc:type) or by using the built-in GitHub API implementation, [`MaxAge`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/service/github/MaxAge:type).
+A [`Validator`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/Validator:type) can be created by wrapping a `func(url *url.URL, age time.Duration) bool`
+function with [`apiproxy.ValidatorFunc(...)`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/ValidatorFunc:type) or by using the built-in GitHub API implementation, [`MaxAge`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/service/github/MaxAge:type).
 
-The [`RevalidationTransport`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/RevalidationTransport:type) can be used in an [`http.Client`](https://sourcegraph.com/code.google.com/p/go/symbols/go/code.google.com/p/go/src/pkg/net/http/Client:type) that is passed to external libraries, to give control over HTTP requests when using libraries whose only configuration point is an [`http.Client`](https://sourcegraph.com/code.google.com/p/go/symbols/go/code.google.com/p/go/src/pkg/net/http/Client:type).
+The [`RevalidationTransport`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/RevalidationTransport:type) can be used in an [`http.Client`](https://sourcegraph.com/code.google.com/p/go/symbols/go/code.google.com/p/go/src/pkg/net/http/Client:type) that is passed to external libraries, to give control over HTTP requests when using libraries whose only configuration point is an [`http.Client`](https://sourcegraph.com/code.google.com/p/go/symbols/go/code.google.com/p/go/src/pkg/net/http/Client:type).
 
-The file [`service/github/client_test.go`](https://github.com/sourcegraph/apiproxy/blob/master/service/github/client_test.go)
+The file [`service/github/client_test.go`](https://github.com/sniperkit/apiproxy/blob/master/service/github/client_test.go)
 contains a full example using the [go-github library](https://github.com/google/go-github), summarized here:
 
 ```go
@@ -73,10 +73,10 @@ httpClient := &http.Client{Transport: transport}
 client := github.NewClient(httpClient)
 ```
 
-Now HTTP requests initiated by go-github will be subject to the caching policy set by the custom [`RevalidationTransport`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/RevalidationTransport:type).
+Now HTTP requests initiated by go-github will be subject to the caching policy set by the custom [`RevalidationTransport`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/RevalidationTransport:type).
 
 
-You can also inject a `Cache-Control: no-cache` header to a specific request if you use [`apiproxy.RequestModifyingTransport`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/RequestModifyingTransport:type) as follows:
+You can also inject a `Cache-Control: no-cache` header to a specific request if you use [`apiproxy.RequestModifyingTransport`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/RequestModifyingTransport:type) as follows:
 
 ```go
 // Wrap our transport from above in a RequestModifyingTransport.
@@ -91,12 +91,12 @@ client.Repositories.Get("sourcegraph", "apiproxy")
 
 The function [`apiproxy.NewCachingSingleHostReverseProxy(target *url.URL, cache
 Cache)
-*httputil.ReverseProxy`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/NewCachingSingleHostReverseProxy)
+*httputil.ReverseProxy`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/NewCachingSingleHostReverseProxy)
 returns a simple caching reverse proxy that you can use as an
 `http.Handler`.
 
 You can wrap the handler's `Transport` in an
-['apiproxy.RevalidationTransport`](https://sourcegraph.com/github.com/sourcegraph/apiproxy/symbols/go/github.com/sourcegraph/apiproxy/RevalidationTransport:type)
+['apiproxy.RevalidationTransport`](https://sourcegraph.com/github.com/sniperkit/apiproxy/symbols/go/github.com/sniperkit/apiproxy/RevalidationTransport:type)
 to specify custom cache timeout behavior.
 
 The file `cmd/apiproxy/apiproxy.go` contains a full example, summarized here:
@@ -123,7 +123,7 @@ apiproxy's features. It returns a constantly updating JSON array of "chirps" at
 the path `/chirps`.
 
 1. Run `go run example/chirper/chirper.go` in one terminal window.
-1. Install apiproxy: `go install github.com/sourcegraph/apiproxy/cmd/apiproxy`
+1. Install apiproxy: `go install github.com/sniperkit/apiproxy/cmd/apiproxy`
 1. Run `apiproxy -http=:8080 -never-revalidate http://localhost:9090` in another terminal window.
 
 Now, let's make a request to the chirper API via apiproxy. Since this is our

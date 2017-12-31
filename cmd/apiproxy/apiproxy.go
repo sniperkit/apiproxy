@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/gorilla/handlers"
-	"github.com/sourcegraph/apiproxy"
+	"github.com/sniperkit/apiproxy"
 	"github.com/sourcegraph/httpcache"
 	"log"
 	"net/http"
