@@ -1,5 +1,5 @@
-hash: 3fa0d922340d2db8bf100aaca4ee0c85c41b62bd7177b1f693c9832eb14863fd
-updated: 2017-12-31T19:36:05.370476481+01:00
+hash: bd1981197a49fa27aeb30cefc9cfe3dc86fb2550cb0b441bb92ebc4b252dde61
+updated: 2017-12-31T19:37:41.799874356+01:00
 imports:
 - name: github.com/gfleury/go-bitbucket-v1
   version: fa8ce9c2a0e746540475f78710635a0d474c7581
@@ -21,6 +21,12 @@ imports:
   version: 20a272f9cba629293b02fa41705ab740cba2411a
   subpackages:
   - librariesio
+- name: github.com/orijtech/arxiv
+  version: 44aca911cb673a0187ec0a9fc6049dcc80c68183
+  subpackages:
+  - v1
+- name: github.com/orijtech/otils
+  version: 2369a11e3b261765cd468491c47f8af1f41f54c3
 - name: github.com/sniperkit/httpcache
   version: 2f1e84dc232f96bf26d6759fc26e32a272e01031
   subpackages:
@@ -36,6 +42,10 @@ imports:
   version: 197281d4e0ecd78c33865daf9c6e51626feefcb2
   subpackages:
   - internal
+- name: golang.org/x/tools
+  version: f271d7a0f8cf389f3ee4f6bf8d68e716a60ea571
+  subpackages:
+  - blog/atom
 - name: google.golang.org/appengine
   version: 5bee14b453b4c71be47ec1781b0fa61c2ea182db
   subpackages:

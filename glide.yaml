@@ -8,6 +8,9 @@ import:
 - package: github.com/hackebrot/go-librariesio
   subpackages:
   - librariesio
+- package: github.com/orijtech/arxiv
+  subpackages:
+  - v1
 - package: github.com/sniperkit/httpcache
   subpackages:
   - pkg
